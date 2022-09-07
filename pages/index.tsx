@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
 
-        <DefaultBlock style={{background: 'white'}}>
+        <DefaultBlock style={{background: 'white'}} useScrollAnimation={true}>
           <div style={{textAlign: 'center', margin: '3em 0', fontSize: '1.3em', fontWeight: 200}}>
             <p>
               「どんなサークルを選べば良いのか分からない！」<br/>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           <div style={{backgroundImage: 'url(/score.jpg)', backgroundSize: 'cover'}}/>
         </div>
 
-        <DefaultBlock style={{background: 'white'}}>
+        <DefaultBlock style={{background: 'white'}} useScrollAnimation={true}>
           <div>
             <FeatureTitle enTitle={'Features'} jaTitle={'特徴'}>
               Sphereは自分の趣味や嗜好からサークルを見つけることが出来る<br/>
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         </div>
 
         <span id={'circles'}/>
-        <GridTextImage style={{height: 'var(--block-height)'}}>
+        <GridTextImage style={{height: 'var(--block-height)'}} useScrollAnimation={true}>
           <TextPart>
             <div style={{margin: 'auto'}}>
               <FeatureTitle enTitle={'Circles'} jaTitle={'サークル一覧機能'}>
@@ -101,7 +101,8 @@ const Home: NextPage = () => {
         </GridTextImage>
 
         <span id={'scouts'}/>
-        <GridImageText style={{height: 'var(--block-height)', background: 'rgb(255,250,248)'}}>
+        <GridImageText style={{height: 'var(--block-height)', background: 'rgb(255,250,248)'}}
+                       useScrollAnimation={true}>
           <TextPart>
             <FeatureTitle enTitle={'Scouts'} jaTitle={'スカウト機能'}>
               あなたに合ったサークルの新歓にご招待！？
@@ -122,7 +123,8 @@ const Home: NextPage = () => {
         </GridImageText>
 
         <span id={'suggestions'}/>
-        <GridTextImage style={{height: 'var(--block-height)'}}>
+        <GridTextImage style={{height: 'var(--block-height)'}}
+                       useScrollAnimation={true}>
           <TextPart>
             <FeatureTitle enTitle={'Suggestions'} jaTitle={'サジェスト機能'}>
               アプリがあなたにおすすめのサークルをピックアップ！
@@ -147,7 +149,7 @@ const Home: NextPage = () => {
           <div style={{backgroundImage: 'url(/tennis.jpg)', backgroundSize: 'cover'}}/>
         </div>
 
-        <DefaultBlock>
+        <DefaultBlock useScrollAnimation={true}>
           <FeatureTitle enTitle={'Try it now!'} jaTitle={'使ってみましょう！'}>
             {''}
           </FeatureTitle>
@@ -167,7 +169,7 @@ const Home: NextPage = () => {
           <div style={{backgroundImage: 'url(/score.jpg)', backgroundSize: 'cover'}}/>
         </div>
 
-        <DefaultBlock>
+        <DefaultBlock useScrollAnimation={true}>
           <FeatureTitle enTitle={'Q&A'} jaTitle={'よくある質問'}>
             {''}
           </FeatureTitle>
@@ -190,8 +192,8 @@ const Home: NextPage = () => {
             <p style={{fontWeight: 100}}>
               &copy; 2022 チーム等差数列
             </p>
-            <p style={{fontWeight: 100, opacity: 0.5}}>
-              Powered by ▲Vercel and Next.js
+            <p style={{fontWeight: 100, fontSize: '0.7em'}}>
+              Powered by ▲Vercel + Next.js and Framer Motion
             </p>
           </DefaultBlock>
         </footer>

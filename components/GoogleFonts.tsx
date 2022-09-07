@@ -9,7 +9,6 @@ const fontObjectToString = ({family, weight}: Font) => {
 }
 
 const GoogleFonts = ({ fonts }: { fonts: Font[] }) => {
-  console.log('fonts are loaded!')
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
