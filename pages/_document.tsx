@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import GoogleFonts from "../components/GoogleFonts";
+import {NextSeo} from "next-seo";
 
 const MyDocument = () => {
   return (
@@ -11,6 +12,9 @@ const MyDocument = () => {
           {family: 'Noto Sans JP', weight: [100, 300, 400, 700, 900]},
           {family: 'Urbanist', weight: [100, 300]}
         ]}/>
+        <NextSeo
+          noindex={true}
+        />
       </Head>
       <body>
         <Main />
