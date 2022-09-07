@@ -1,0 +1,19 @@
+:root {
+  --side-margin: 5em;
+  --block-height: 500px;
+  @media screen and (max-width: 900px) {
+    --side-margin: 1em;
+    --block-height: initial;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+

@@ -1,0 +1,51 @@
+.title {
+    margin: 0;
+}
+
+.ja_title {
+    position: absolute;
+    display: inline-block;
+    margin-top: 2em;
+    z-index: 100;
+
+    font-size: 1.5em;
+    font-weight: 900;
+    background: linear-gradient(135deg, #fed878 0%, #fa505e 100%);
+    background: -webkit-linear-gradient(-45deg, #fed878 0%, #fa505e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 800px) {
+        position: relative;
+        margin-top: 0;
+        font-size: 1em;
+    }
+}
+
+.en_title {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 100;
+    user-select: none;
+
+    font-size: 5em;
+    font-style: italic;
+    opacity: 0.1;
+
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 0.8em;
+    }
+}
+
+.description {
+    //padding: 0 0 0 1em;
+    font-style: italic;
+    margin: 0 !important;
+    color: dimgray;
+    @media screen and (min-width: 800px) {
+        margin: -1em 0 0 0;
+    }
+}
+
+

@@ -1,0 +1,31 @@
+.q, .a {
+    display: grid;
+    grid-template-columns: 3em auto;
+    grid-template-rows: minmax(0, 1fr);
+    margin: 1em;
+}
+
+.q_fig, .a_fig {
+    width: 2em;
+    height: 2em;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-family: 'Urbanist', sans-serif;
+
+    position: relative;
+    top: -0.2em;
+    vertical-align:top;
+}
+
+.q_fig {
+    background: cadetblue;
+}
+
+.a_fig {
+    background: #fa505e;
+}

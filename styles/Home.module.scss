@@ -1,0 +1,113 @@
+.header {
+    height: 400px;
+    background-image: url('/thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header_wrapper {
+    backdrop-filter: brightness(40%);
+    text-align: center;
+
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 5em;
+        color: white;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+
+    span {
+        font-family: 'Urbanist', sans-serif;
+        position: relative;
+        top: -1.1em;
+        left: 1.3em;
+    }
+
+    p.copy {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 0;
+    }
+}
+
+.main {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.circle_image_line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    overflow: clip;
+    height: 150px;
+
+    div {
+        background-position: center;
+        width: 100%;
+    }
+}
+
+.footer {
+    background: rgb(227,148,0);
+    color: white;
+    text-align: center;
+
+    p {
+        margin: 0.3em;
+    }
+}
+
+.features_ol {
+    list-style-type: none;
+    li {
+        font-weight: 300;
+        font-size: 1.5em;
+        font-style: italic;
+        .marker {
+            background:linear-gradient(transparent 60%, rgb(255, 231, 184) 60%);
+        }
+        color: #222;
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+        line-height: 2.2;
+    }
+
+    li:nth-child(2) {
+        padding-left: 1em;
+    }
+
+    li:nth-child(3) {
+        padding-left: 2em;
+    }
+
+}
+
+.button {
+    background: linear-gradient(135deg, #fed878 0%, #fa505e 100%);
+    background: -webkit-linear-gradient(-45deg, #fed878 0%, #fa505e 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em 0;
+    display: inline-block;
+    padding: 0.5em 2em;
+    border-radius: 100px;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+}
