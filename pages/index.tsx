@@ -9,6 +9,7 @@ import Link from "next/link";
 import {A, Q} from "../components/QA";
 
 const Home: NextPage = () => {
+  const figmaUrl = 'https://www.figma.com/proto/GpsUQwmqHQuxoWx84hIXJW/%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97?node-id=6%3A9&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A9'
   return (
     <div>
       <Head>
@@ -157,8 +158,8 @@ const Home: NextPage = () => {
             まずはあなたの大学のサークルを確認してみてください！
           </p>
           <p>
-            <Link href={'https://www.figma.com/file/GpsUQwmqHQuxoWx84hIXJW/%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97?node-id=0%3A1'}>
-              <a className={styles.button}>使ってみる</a>
+            <Link href={figmaUrl}>
+              <a className={styles.button} target="_blank" rel="noopener">使ってみる</a>
             </Link>
           </p>
         </DefaultBlock>
@@ -175,12 +176,15 @@ const Home: NextPage = () => {
           </FeatureTitle>
 
           <Q>
-            質問
+            怪しいサークルに登録情報が見られてしまう危険はありませんか？
           </Q>
-
           <A>
-            答え
+            ご安心ください！
+            サークル側にアンケートの結果は見られてしまいますが、
+            ニックネームはユーザーIDとして個人を特定できない形で表示されます。
+            ですからメッセージを無視した場合でもサークルに知られることはありません。
           </A>
+
         </DefaultBlock>
 
         <footer className={styles.footer}>

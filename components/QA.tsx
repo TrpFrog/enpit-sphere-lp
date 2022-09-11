@@ -1,18 +1,18 @@
 import React from "react";
 import styles from "../styles/QA.module.scss";
 
-export const Q = (props: {children: string | React.ReactNode}) => {
+export const Q = (props: {children?: string | React.ReactNode}) => {
   return (
     <div className={styles.q}>
       <div className={styles.q_fig}>Q</div>
       <div className={styles.q_content}>
-        {props.children}
+        <strong>{props.children}</strong>
       </div>
     </div>
   )
 }
 
-export const A = (props: {children: string | React.ReactNode}) => {
+export const A = (props: {children?: string | React.ReactNode}) => {
   return (
     <div className={styles.a}>
       <div className={styles.a_fig}>A</div>
